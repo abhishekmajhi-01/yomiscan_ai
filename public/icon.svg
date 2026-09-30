@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+
+  <!-- Document Sheet -->
+  <g filter="url(#shadow)">
+    <!-- Back Page hint -->
+    <path d="M168 120 H344 L384 160 V392 C384 405.25 373.25 416 360 416 H168 C154.75 416 144 405.25 144 392 V144 C144 130.75 154.75 120 168 120 Z" fill="url(#docGrad)" />
+
+    <!-- Corner Fold -->
+    <path d="M344 120 V160 H384 Z" fill="#c7d2fe" />
+
+    <!-- Scan Line with glowing cyan accent -->
+    <rect x="120" y="248" width="272" height="6" rx="3" fill="#38bdf8" />
+    <rect x="120" y="245" width="272" height="12" rx="6" fill="#38bdf8" opacity="0.35" />
+
+    <!-- Document Lines -->
+    <rect x="180" y="200" width="120" height="12" rx="6" fill="#818cf8" />
+    <rect x="180" y="280" width="152" height="10" rx="5" fill="#a5b4fc" />
+    <rect x="180" y="308" width="130" height="10" rx="5" fill="#a5b4fc" />
+    <rect x="180" y="336" width="90" height="10" rx="5" fill="#c7d2fe" />
+
+    <!-- Scanner Target Crosshairs / Corner brackets -->
+    <path d="M120 180 V140 H160" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+    <path d="M392 180 V140 H352" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.5" />
+    <path d="M120 360 V400 H160" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+    <path d="M392 360 V400 H352" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

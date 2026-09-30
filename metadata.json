@@ -1,0 +1,10 @@
+{
+  "name": "YomiScan - AI Document Scanner & Manager",
+  "description": "Professional, privacy-first AI document scanner with perspective correction, multi-page scanning, OCR, PDF tools, digital signatures, and intelligent extraction.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
